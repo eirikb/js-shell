@@ -1,0 +1,23 @@
+{
+  "name": "js-shell",
+  "version": "0.0.1",
+  "description": "Pipe terminal commands into JavaScript",
+  "license": "MIT",
+  "repository": "eirikb/js-shell",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "bin": {
+    "js": "cli.js"
+  },
+  "xo": {
+    "space": true
+  },
+  "devDependencies": {
+    "ava": "0.23.0",
+    "xo": "0.18.2"
+  }
+}
