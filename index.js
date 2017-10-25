@@ -23,8 +23,8 @@ module.exports = (js, stdin) => {
             .map(part => part.trim())
             .filter(part => part)
             .map(part => {
-              const res = parseInt(part, 10);
-              return isNaN(res) ? part : res;
+              const asNumber = Number(part);
+              return isNaN(asNumber) ? part : asNumber;
             })
         }));
 
