@@ -15,6 +15,15 @@ $ npm i -g js-shell
 $ ls | js 'lines.map(line => line.toUpperCase())' 
 ```
 
+## Variables
+
+These are the variables passed into the context of the script:  
+`data`: One string of all the incoming data.  
+`items`: Incoming data split into array from newlines, then each line contains `line` (whole line) and `parts` which is the line split by whitespace.  
+`lines`: Incoming data split into array from newlines.
+`parts`: Incoming data split into array from newlines, then each line is split by whitespace (two-dimensional array).
+`console`: Directly mapped `console` for convenience, e.g., `lines.forEach(line => console.log(line))`.
+
 ## Examples
 
 Find all files larger than 10K
