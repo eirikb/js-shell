@@ -21,10 +21,10 @@ Find all files larger than 10K
 ![Imgur](https://i.imgur.com/UiT0REB.gif)
 
 Parse JSON (similar to [jq](https://stedolan.github.io/jq))
-![Imgur](https://i.imgur.com/X16kJmk.gifv)
+![Imgur](https://i.imgur.com/X16kJmk.gif)
 
 Stringify JSON (similar to [jo](https://github.com/jpmens/jo))
-![Imgur](https://i.imgur.com/MncIWuI.gifv)
+![Imgur](https://i.imgur.com/MncIWuI.gif)
 
 
 
