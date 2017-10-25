@@ -18,11 +18,14 @@ module.exports = (js, stdin) => {
         .filter(l => l)
         .map(l => ({
           line: l,
-          parts: l.split(/\s/).map(part => {
-            part = part.trim();
-            const res = parseInt(part, 10);
-            return isNaN(res) ? part : res;
-          })
+          parts: l
+            .split(/\s/)
+            .map(part => part.trim())
+            .filter(part => part)
+            .map(part => {
+              const res = parseInt(part, 10);
+              return isNaN(res) ? part : res;
+            })
         }));
 
       const lines = items.map(item => item.line);
